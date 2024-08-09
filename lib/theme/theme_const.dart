@@ -285,6 +285,8 @@ extension ColorExtends on ColorScheme {
 
   static const hrShadeColorL = Color(0xFFF5C4E1);
 
+  static const textColor1 = Color(0xFF000000);
+
   static const hrShadeColorD = Color(0xFFF5C4E1);
 
   static const hrMedianLineColorL = Color(0xFFC0669E);
@@ -393,6 +395,7 @@ extension ColorExtends on ColorScheme {
       _lightTheme ? energyColors : energyColors;
 
   Color get hrShadeColor => _lightTheme ? hrShadeColorL : hrShadeColorD;
+  Color get textColor => _lightTheme ? textColor1 : textColor1;
 
   Color get hrMedianLineColor =>
       _lightTheme ? hrMedianLineColorL : hrMedianLineColorD;
