@@ -57,15 +57,15 @@ class ThemeConst {
   }
 
   static const ColorScheme _lightColorScheme = ColorScheme(
-    primary: Color(0xFF2D1F55),
+    primary: Color(0xFF4044C9),
     // changed to new theme
-    secondary: Color(0xFF2D1F55),
+    secondary: Color(0xFF4044C9),
     surface: Colors.white,
     error: _errorFillColor,
     onError: _errorFillColor,
-    onPrimary: Color(0xFF2D1F55),
-    onSecondary: Color(0xFF2D1F55),
-    onSurface: Color(0xFF2D1F55),
+    onPrimary: Color(0xFF4044C9),
+    onSecondary: Color(0xFF4044C9),
+    onSurface: Color(0xFF4044C9),
     brightness: Brightness.light,
     background: Colors.white,
     onBackground: Colors.white,
@@ -173,18 +173,18 @@ class ThemeConst {
 }
 
 extension ColorExtends on ColorScheme {
-  static const primaryColorl = Color(0xFF2D1F55);
-  static const primaryColorD = Color(0xFF2D1F55);
-  static const primaryColorLightl = Color(0xFF2D1F55);
-  static const primaryColorLightD = Color(0xFF2D1F55);
+  static const primaryColorl = Color(0xFF4044C9);
+  static const primaryColorD = Color(0xFF4044C9);
+  static const primaryColorLightl = Color(0xFF4044C9);
+  static const primaryColorLightD = Color(0xFF4044C9);
   static const greyl = Color(0xFFD9D9D9);
   static const greyD = Color(0xFFD9D9D9);
   static const greyLightl = Color(0xFFF5F5F5);
   static const greyLightD = Color(0xFFF5F5F5);
   static const whitel = Color(0xFFFFFFFF);
   static const whiteD = Color(0xFFFFFFFF);
-  static const primaryTextColorl = Color(0xFF2D1F55);
-  static const primaryTextColorD = Color(0xFF2D1F55);
+  static const primaryTextColorl = Color(0xFF4044C9);
+  static const primaryTextColorD = Color(0xFF4044C9);
   static const secondaryTextColorl = Color(0xFFFFFFFF);
   static const secondaryTextColorD = Color(0xFFFFFFFF);
   static const redl = Color(0xFFFB2424);
@@ -197,8 +197,8 @@ extension ColorExtends on ColorScheme {
   static const orangeD = Color(0xFFEA7101);
   static const darkGreenD = Color(0xFF5AB300);
   static const darkGreenL = Color(0xFF5AB300);
-  static const violetBlueL = Color(0xFF271b65);
-  static const violetBlueD = Color(0xFF271b65);
+  static const violetBlueL = Color(0xFF4044C9);
+  static const violetBlueD = Color(0xFF4044C9);
   static const lightBlueL = Color(0xFF0f00f1);
   static const lightBlueD = Color(0xFF0f00f1);
 
