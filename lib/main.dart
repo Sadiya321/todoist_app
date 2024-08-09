@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/const/string_const.dart';
+import 'package:todo_app/localization/language_data.dart';
+import 'package:todo_app/localization/localizations_delegate.dart';
 import 'package:todo_app/screens/home_screen.dart';
 import 'package:todo_app/theme/theme_const.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -44,12 +48,19 @@ class _MyAppState extends State<MyApp> {
           title: StringConstants.appName,
           debugShowCheckedModeBanner: false,
           theme: ThemeConst.lightThemeData,
-          home: const HomePage(title: 'Flutter Demo Home Page'),
+          home:  const HomePage(title: 'Flutter Demo Home Page'),
           locale: _locale,
           builder: (context, widget) {
             widget = botToastBuilder(context, widget);
             return widget;
           },
+           supportedLocales: LanguageData.getSupportedLocale(),
+          localizationsDelegates:  const [
+            AppLocalizationsDelegate(),
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
         );
       },
     );

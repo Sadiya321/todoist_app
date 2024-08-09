@@ -5,4 +5,7 @@ abstract class Languages {
     return Localizations.of<Languages>(context, Languages)!;
   }
    String get toDo;
+
+   String get today;
+   
 }

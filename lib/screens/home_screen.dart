@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:todo_app/localization/languages/languages.dart';
+import 'package:todo_app/theme/theme_const.dart';
+import 'package:todo_app/widgets/app_textview.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -29,9 +33,15 @@ class _MyHomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
+            AppTextView(
+                text: Languages.of(context).toDo,
+                textStyle: Theme.of(context).textTheme.labelMedium!.copyWith(
+                    fontSize: 14.sp,
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primaryColor
+                        .withOpacity(0.6),
+                    fontWeight: FontWeight.w600)),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
